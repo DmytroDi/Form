@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="my-form" enctype="multipart/form-data">
+      <div>
+        <label for="name">Username</label>
+        <input type="text" id="name" name="username" />
+      </div>
+      <div>
+        <label for="mail">E-mail</label>
+        <input type="text" id="mail" name="email" />
+      </div>
+      <div>
+        <p>Position</p>
+        <div>
+          <input
+            type="radio"
+            id="frontend"
+            name="development"
+            value="frontend"
+          />
+          <label for="frontend">FrontEnd</label>
+        </div>
+        <div>
+          <input type="radio" id="backend" name="development" value="backend" />
+          <label for="backend">BackEnd</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="fullstack"
+            name="development"
+            value="fullstack"
+          />
+          <label for="fullstack">FullStack</label>
+        </div>
+        <div>
+          <input type="radio" id="devops" name="development" value="devops" />
+          <label for="devops">DevOps</label>
+        </div>
+      </div>
+      <div>
+        <p>Framework</p>
+        <div>
+          <input
+            type="checkbox"
+            id="angular"
+            name="framework"
+            value="angular"
+          />
+          <label for="angular">Angular</label>
+        </div>
+        <div>
+          <input type="checkbox" id="react" name="framework" value="react" />
+          <label for="react">React</label>
+        </div>
+        <div>
+          <input type="checkbox" id="vue" name="framework" value="vue" />
+          <label for="vue">Vue</label>
+        </div>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+      </div>
+      <div>
+        <input type="checkbox" id="agree" name="policy" value="agree" />
+        <label for="agree">Agree</label>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
